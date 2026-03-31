@@ -211,6 +211,8 @@ Last known close: ₹1,234.56  (date: 2025-01-10)
 ```
 
 An interactive **Plotly chart** shows the last 30 days of actual vs. predicted prices connected to the 5-day forecast.
+For Example:
+<img width="1266" height="655" alt="image" src="https://github.com/user-attachments/assets/6cb3b856-8e65-4e44-af9b-fc2e72920c05" />
 
 ---
 
