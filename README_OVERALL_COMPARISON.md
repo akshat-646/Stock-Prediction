@@ -39,15 +39,15 @@ They differ in: **how they process the sequential input** (attention vs. recurre
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     SHARED DATA PIPELINE                     │
+│                     SHARED DATA PIPELINE                    │
 │                                                             │
-│  Yahoo Finance API  →  OHLCV (15y / 10y)                   │
+│  Yahoo Finance API  →  OHLCV (15y / 10y)                    │
 │         ↓                                                   │
-│  Feature Engineering  →  13 features per timestep          │
+│  Feature Engineering  →  13 features per timestep           │
 │         ↓                                                   │
 │  MinMaxScaler  (per-ticker, fit on train split)             │
 │         ↓                                                   │
-│  Sliding Window Sequences  →  (90 days IN, 5 days OUT)     │
+│  Sliding Window Sequences  →  (90 days IN, 5 days OUT)      │
 │         ↓                                                   │
 │  80/20 Train-Test Split                                     │
 └─────────────────────────────────────────────────────────────┘
